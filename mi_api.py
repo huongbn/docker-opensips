@@ -1,6 +1,6 @@
-import pgdb
 import json
 import requests
+import psycopg2
 from flask import abort
 from datetime import datetime
 from flask import make_response
@@ -13,7 +13,7 @@ def get_datetime():
 	return(now.strftime("%Y-%m-%d %H:%M:%S"))
 
 def insert_to_db(*args):
-	mydb = pgdb.connect(
+	mydb = psycopg2.connect(
 		host="localhost",
 		user="postgres",
 		password="postgres",
