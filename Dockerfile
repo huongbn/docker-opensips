@@ -7,7 +7,7 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends git curl wg
 
 RUN apt-get update -qq && apt-get install -yqq python3-pip libpq-dev && rm -rf /var/lib/apt/lists
 
-RUN pip3 install flask requests pygresql -U --force-reinstall
+RUN pip3 install flask requests pgdb -U --force-reinstall
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 049AD65B
 RUN echo "deb https://apt.opensips.org buster 2.4-releases" >/etc/apt/sources.list.d/opensips.list
