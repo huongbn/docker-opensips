@@ -16,7 +16,7 @@ def insert_to_db(*args):
 	mydb = pgdb.connect(
 		host="localhost",
 		user="postgres",
-		password="superuser",
+		password="postgres",
 		database="postgres"
 	)
 	mycursor = mydb.cursor()
