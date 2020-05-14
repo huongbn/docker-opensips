@@ -17,8 +17,6 @@ RUN apt-get update -qq && apt-get install -yqq net-tools opensips opensips-json-
     && rm -rf /var/lib/apt/lists/*
 
 COPY opensips.cfg /etc/opensips/
-RUN touch /var/log/opensips.log
-RUN echo "local0.*              -/var/log/opensips.log" >> /etc/rsyslog.conf
 
 EXPOSE 5060/udp
 EXPOSE 8080/tcp
