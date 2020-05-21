@@ -31,7 +31,7 @@ def insert_to_db(*args):
 def scraping_data():
 	datas = {}
 	resource_list = []
-	url = 'http://localhost:8080/json/lb_list'
+	url = 'http://localhost:8888/json/lb_list'
 	req = requests.get(url)
 	content = json.loads(req.content)
 	indexes = content['Destination']
