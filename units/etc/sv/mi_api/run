@@ -1,0 +1,4 @@
+#!/bin/bash
+set -m
+
+exec /usr/bin/python3 /opt/mi_api.py
