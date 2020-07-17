@@ -34,7 +34,8 @@ RUN apt-get update -qq && \
     opensips-mysql-module \
     && rm -rf /var/lib/apt/lists/*
 
-COPY opensips.cfg /etc/opensips/
+COPY src/mi_api.py /opt/
+COPY src/opensips.cfg /etc/opensips/
 
 ADD units /
 RUN ln -s /etc/sv/* /etc/service
