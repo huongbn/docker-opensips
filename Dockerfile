@@ -31,14 +31,18 @@ RUN apt-get update -qq && \
     opensips-postgres-module \
     opensips-console \
     opensips-http-modules \
-    opensips-mysql-module\
+    opensips-mysql-module \
     && rm -rf /var/lib/apt/lists/*
 
-EXPOSE 5060/udp
+COPY opensips.cfg /etc/opensips/
 
 ADD units /
 RUN ln -s /etc/sv/* /etc/service
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x entrypoint.sh
+
+EXPOSE 8888
+EXPOSE 5060/udp
+
 ENTRYPOINT ["/entrypoint.sh"]
