@@ -1,5 +1,5 @@
 # docker-opensips
-![License](https://img.shields.io/github/license/machi1el/docker-opensips?color=red&style=plastic)
+![License](https://img.shields.io/github/license/mach1el/docker-opensips?color=red&style=plastic)
 ![reposize](https://img.shields.io/github/repo-size/mach1el/docker-opensips?color=orange&style=plastic)
 ![dockerbuild](https://img.shields.io/docker/automated/mich43l/opensips?style=plastic)
 
