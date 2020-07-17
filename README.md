@@ -6,11 +6,11 @@
 Opensips - SIP proxy/server on docker.See also [RTPengine](https://github.com/mach1el/docker-rtpengine) ![RTPengine Docker](https://img.shields.io/badge/Docker-RTPengine-red) [kamailio](https://github.com/mach1el/docker-kamailio) ![Kamailio Docker](https://img.shields.io/badge/Docker-Kamailio-brightgreen)
 
 ### Pull from hub
-  docker pull mich43l/opensips
+    docker pull mich43l/opensips
 
 ### Build from source
-  git clone https://github.com/mach1el/docker-opensips.git && cd docker-opensips
-  docker image build -t opensips .
+    git clone https://github.com/mach1el/docker-opensips.git && cd docker-opensips
+    docker image build -t opensips .
 
 ### Run
 * docker run -tid --rm --network=host opensips
