@@ -1,0 +1,7 @@
+#!/bin/bash
+set -m
+HOST_IP=$(ip route get 8.8.8.8 | head -n +1 | tr -s " " | cut -d " " -f 7)
+
+sed -i "s/listen=udp:127.0.0.1:5060/listen=udp:${HOST_IP}:5060/g" ${OPENSIPS_CFG}
+
+exec /usr/sbin/opensips -FEdddddddddd -m 640 -M 5 -f ${OPENSIPS_CFG} 
