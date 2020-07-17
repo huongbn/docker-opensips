@@ -1,7 +1,7 @@
 # docker-opensips
 ![License](https://img.shields.io/github/license/machi1el/docker-opensips?color=red&style=plastic)
-![reposize](https://img.shields.io/github/repo-size/mach1el/docker-kamailio?color=orange&style=plastic)
-![dockerbuild](https://img.shields.io/docker/automated/mich43l/kamailio?style=plastic)
+![reposize](https://img.shields.io/github/repo-size/mach1el/docker-opensips?color=orange&style=plastic)
+![dockerbuild](https://img.shields.io/docker/automated/mich43l/opensips?style=plastic)
 
 Opensips - SIP proxy/server on docker.See also [RTPengine](https://github.com/machi1el/docker-rtpengine) ![RTPengine Docker](https://img.shields.io/badge/Docker-RTPengine-red) [kamailio](https://github.com/machi1el/docker-kamailio) ![Kamailio Docker](https://img.shields.io/badge/Docker-Kamailio-brightgreen)
 
